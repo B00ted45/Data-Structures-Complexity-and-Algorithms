@@ -43,5 +43,49 @@ filter(bool_returning_function, sequence)
 
 - function: The function name we provide for filter() must be return a boolean value ... should also be able handle the items inside the sequence as its arguments
 - sequence: any iterable data type
+___ 
+Explanation
+
+Function Composition Breakdown
+1. string version of the array --> map(str, array)
+2. filter out the palindrome --> filter(isPalindrome, string version of the array)
+3. remap all values back to integers --> map(int, palindromes)
+4. turn the mapped integers iterable back inside a list --> list(palindromicIterables)
+
+How it would looked with multiple defined variables:
+
+array = list(range(1,10000))
+str_array = map(str, array)
+palindromes = filter(isPalindrome, str_array)
+palindromics = map(int, palindromes)
+
+palindromic_numbers = list(palindromes)
+___
+
+## Tuples
+___
+Tuple is used when you require these attributes from a data structure: 
+* It must be immutable
+* It must allow different datatypes as items
+* It must be iterable
+* It must be nestable (much like a list within a list)
+
+Tuple is writted as () 
+() is an empty tuple
+(50,) is a single tuple
+(50,60,) is a double tuple??
+*tuples are sliceable (indexing avaliable)
+
+#### Packing and Unpacking
+Explanation:
+
+* Packing collect multiple variable’s values and assign it to a single variable
+* Unpacking help us assign certain values from a tuple to different variables
+* This becomes very useful skill when combined with variable arguments for Function Definition and Function Calls
+
+
+
+
+
 
 
