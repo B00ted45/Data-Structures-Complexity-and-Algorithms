@@ -83,6 +83,15 @@ Explanation:
 * Unpacking help us assign certain values from a tuple to different variables
 * This becomes very useful skill when combined with variable arguments for Function Definition and Function Calls
 
+___
+
+## Sets
+A set is an unordered collection with no duplicate elements in Python 3
+**mathematical way to describe collection of different unique objects.
+
+
+
+
 
 
 
